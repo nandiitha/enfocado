@@ -1,16 +1,60 @@
-# React + Vite
+# ⏱️ Enfocado — Minimal Focus Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Stay focused, track your progress, and grow your streak 🌱
 
-Currently, two official plugins are available:
+A beautifully simple **React-based focus timer** that helps you build consistency, track focus sessions, and stay motivated with streaks and rewards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Screenshot](./screenshots/focusflow-dashboard.png)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+✅ **Pomodoro-style Timer** – Stay productive in focused bursts.  
+✅ **Session History** – Automatically logs every focus session.  
+✅ **Weekly Focus Chart** – Visualizes your total focus time per day.  
+✅ **Focus Streak 🔥** – Track your consistency day by day.  
+✅ **Reward System 🍀** – Earn a clover after every 4 completed sessions.  
+✅ **Light / Dark Mode** – Seamless theme switching.  
+✅ **Sound Alerts** – Plays a chime when a session completes.  
+✅ **Optional Browser Notifications** – Get a reminder even when you switch tabs.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖼️ Screenshots
+
+| Focus Timer | Stats Dashboard | Rewards |
+|--------------|----------------|----------|
+| ![Focus Timer](./screenshots/focus-timer.png) | ![Stats Dashboard](./screenshots/stats-page.png) | ![Rewards](./screenshots/reward-system.png) |
+
+> 💡 Tip: place your screenshots in a `/screenshots` folder inside the root directory.
+
+---
+
+## ⚙️ Tech Stack
+
+- **React 18**
+- **Tailwind CSS**
+- **Framer Motion** – smooth animations
+- **Recharts** – data visualization
+- **Lucide Icons** – clean, lightweight icons
+- **LocalStorage** – persistent state across reloads
+- **Custom Hooks** (`useTimer`, `useSessions`, `useSound`) for modular logic
+
+---
+
+## 🚀 Getting Started
+
+1️⃣ Clone the repository
+```bash
+git clone https://github.com/nandiitha/enfocado.git
+cd enfocado
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start the development server
+npm run dev
+
+4️⃣ Build for production
+npm run build
