@@ -16,7 +16,6 @@ export const SessionsProvider = ({ children }) => {
     const date = new Date(startTime).toLocaleString();          // readable date/time
     const newSession = { id: Date.now(), date, duration, status };
 
-    console.log("🟢 Adding session:", newSession);
     setSessions((prev) => [...prev, newSession]);
   };
 

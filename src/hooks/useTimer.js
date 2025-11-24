@@ -91,7 +91,6 @@ const playCompleteSound = useSound("/sounds/focus-complete.mp3");
     if (savedTime) setTimeLeft(savedTime);
 
     if (savedRunning && savedTime > 0) {
-      console.log("✅ Auto-resuming timer...");
       if (savedStart) startTimeRef.current = savedStart;
       startTimer();
     }

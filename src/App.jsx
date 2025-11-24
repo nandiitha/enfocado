@@ -22,7 +22,6 @@ const rewards = Math.floor(completedSessions / 4);
       localStorage.setItem("selectedPainting", JSON.stringify(selectedPainting));
     }
   }, [selectedPainting]);
-  console.log('selectedPainting: ', selectedPainting);
 
   return (
     

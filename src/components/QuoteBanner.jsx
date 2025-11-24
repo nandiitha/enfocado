@@ -11,7 +11,6 @@ export default function QuoteBanner() {
       try {
         const response = await fetch("https://dummyjson.com/quotes");
       const data = await response.json(); // data is an array object
-console.log("data:", data);
   const randomQuote = data.quotes[Math.floor(Math.random() * data.quotes.length)];
 
 setQuote({
@@ -21,7 +20,7 @@ setQuote({
 
         setLoading(false);
       } catch (error) {
-        console.error("Failed to fetch quote:", error);
+        // console.error("Failed to fetch quote:", error);
         setQuote({
           text: "Focus on being productive instead of busy.",
           author: "Default",

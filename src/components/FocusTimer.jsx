@@ -19,8 +19,7 @@ const FocusTimer = ({ selectedPainting }) => {
 
   // ✅ correct prop fallback
   const painting = selectedPainting || null;
-  console.log('painting: ', painting);
-  console.log("selectedPainting: ", selectedPainting);
+
 
   useEffect(() => {
     const handleVisibilityChange = () => {
@@ -31,7 +30,6 @@ const FocusTimer = ({ selectedPainting }) => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, [pauseTimer]);
-console.log("🎨 painting url:", painting?.url);
 return (
   <div className="relative flex flex-col items-center justify-center">
 
